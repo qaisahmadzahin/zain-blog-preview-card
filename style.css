@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+
+/* ------------- CSS RESETS ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+/* ------------- DESKTOP CODE ------------- */
+
+body {
+    font-family: "Figtree", sans-serif;
+    max-width: 1440px;
+    width: 90%;
+    margin-inline: auto;
+    min-height: 100vh;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border-radius: 20px;
+    width: 384px;
+    padding: 24px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    gap: 24px;
+    box-shadow: 8px 8px 0px 0px;
+}
+
+.picture {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.heading {
+    color: var(--Gray-950);
+    font-weight: 900;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+
+.paragraph1 {
+    font-size: 0.785rem;
+    color: var(--Gray-950);
+}
+
+
+.heading:hover,.heading:active,
+.heading:focus {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.paragraph2 {
+    color: var(--Gray-500);
+    font-size: 1rem;
+    padding-right: 12px;
+}
+
+.btn {
+    font-size: 0.75rem;
+    background-color: var(--Yellow);
+    padding: 4px 12px;
+    display: inline-block;
+    color: var(--Gray-950);
+    text-decoration: none;
+}
+
+.greg {
+    font-size: 0.785rem;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 32px;
+}
+
+.greg>img {
+    max-width: 32px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* -------------- MOBILE -------------- */
+
+@media screen and (width:24rem) {
+    body {
+        background-color: var(--Yellow);
+        max-width: 384px;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .wrapper {
+        display: flex;
+        background-color: var(--White);
+        width: 327px;
+    }
+    .picture {
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        line-height: 150%;
+        font-weight: 900;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+    }
+
+    .paragraph {
+        font-size: 0.75rem;
+        line-height: 150%;
+    }
+
+
+    .paragraph2 {
+        font-size: 0.785rem;
+        line-height: 150%;
+    }
+
+footer{
+    font-size: 0.785rem;
+}
+    
+}
